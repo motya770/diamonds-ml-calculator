@@ -1,0 +1,118 @@
+/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 /Users/kudelin/Desktop/work/projects/pystat/pystat/diamonds/random_forest.py
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+['Asscher', 'Cushion', 'Emerald', 'Heart', 'Marquise', 'Oval', 'Pear', 'Princess', 'Radiant', 'Round']
+['Faint', 'Faint Blue', 'Medium', 'Medium Blue', 'Medium Yellow', 'None', 'Strong', 'Strong Blue', 'Very Strong']
+['FL', 'IF', 'SI1', 'SI2', 'VS1', 'VS2', 'VVS1', 'VVS2']
+['D', 'E', 'F', 'G', 'H', 'I', 'J']
+['Large', 'Medium', 'None', 'Slightly Large', 'Small', 'Very Small']
+['Good', 'Ideal', 'Signature Ideal', 'Very Good']
+['Excellent', 'Good', 'Very Good']
+['Excellent', 'Good', 'Very Good']
+0    600
+1    600
+2    600
+3    600
+4    600
+Name: PRICE, dtype: int64
+count    5613.000000
+mean      851.217709
+std       185.002929
+min       600.000000
+25%       668.000000
+50%       856.000000
+75%      1000.000000
+max      1200.000000
+Name: PRICE, dtype: float64
+   Carat  Shape  Clarity  Color  Culet  Cut  Depth  Fluorescence  LxwRatio  \
+0   0.38      9        5      6      2    1   61.2             5      1.01
+1   0.30      9        1      6      2    1   62.7             5      1.01
+2   0.23      9        6      0      2    1   61.8             0      1.01
+3   0.38      9        2      5      2    0   58.1             5      1.00
+4   0.30      9        1      6      2    1   62.6             5      1.01
+
+   Polish  Symmetry
+0       0         2
+1       0         0
+2       2         0
+3       2         0
+4       0         0
+             Carat        Shape      Clarity        Color        Culet  \
+count  5613.000000  5613.000000  5613.000000  5613.000000  5613.000000
+mean      0.444178     5.605024     4.230536     2.335828     2.025833
+std       0.090415     2.476092     1.795580     1.870255     0.282935
+min       0.230000     0.000000     0.000000     0.000000     0.000000
+25%       0.400000     4.000000     3.000000     1.000000     2.000000
+50%       0.460000     6.000000     4.000000     2.000000     2.000000
+75%       0.500000     7.000000     6.000000     4.000000     2.000000
+max       0.830000     9.000000     7.000000     6.000000     5.000000
+
+               Cut        Depth  Fluorescence     LxwRatio       Polish  \
+count  5613.000000  5613.000000   5613.000000  5613.000000  5613.000000
+mean      2.264208    64.897916      4.262070     1.290613     0.839836
+std       1.201328     5.162459      1.691215     0.308088     0.966197
+min       0.000000    51.500000      0.000000     0.820000     0.000000
+25%       1.000000    61.300000      5.000000     1.010000     0.000000
+50%       3.000000    63.700000      5.000000     1.300000     0.000000
+75%       3.000000    68.200000      5.000000     1.500000     2.000000
+max       3.000000    80.000000      8.000000     2.290000     2.000000
+
+          Symmetry
+count  5613.000000
+mean      1.383218
+std       0.754022
+min       0.000000
+25%       1.000000
+50%       2.000000
+75%       2.000000
+max       2.000000
+++++++++++ DESCIPTION +++++++++++++
+++++++++++ ATTRIBUTES CORR +++++++++++++
+                 Carat     Shape   Clarity     Color     Culet       Cut  \
+Carat         1.000000 -0.585208 -0.206517  0.208998 -0.053745  0.172655
+Shape        -0.585208  1.000000 -0.004485  0.061701  0.039239 -0.209199
+Clarity      -0.206517 -0.004485  1.000000  0.013713  0.017036 -0.015603
+Color         0.208998  0.061701  0.013713  1.000000 -0.005285 -0.086290
+Culet        -0.053745  0.039239  0.017036 -0.005285  1.000000 -0.013269
+Cut           0.172655 -0.209199 -0.015603 -0.086290 -0.013269  1.000000
+Depth         0.224309 -0.004492 -0.004558  0.073579 -0.040294 -0.159005
+Fluorescence -0.003596 -0.025616 -0.038324 -0.043040 -0.004096  0.046076
+LxwRatio      0.301997 -0.354575 -0.021914 -0.153837  0.017889  0.159205
+Polish        0.088965 -0.071881 -0.009937 -0.073670  0.037300  0.008063
+Symmetry      0.286708 -0.328830  0.028707 -0.102648 -0.017178  0.146688
+
+                 Depth  Fluorescence  LxwRatio    Polish  Symmetry
+Carat         0.224309     -0.003596  0.301997  0.088965  0.286708
+Shape        -0.004492     -0.025616 -0.354575 -0.071881 -0.328830
+Clarity      -0.004558     -0.038324 -0.021914 -0.009937  0.028707
+Color         0.073579     -0.043040 -0.153837 -0.073670 -0.102648
+Culet        -0.040294     -0.004096  0.017889  0.037300 -0.017178
+Cut          -0.159005      0.046076  0.159205  0.008063  0.146688
+Depth         1.000000      0.107405 -0.355404  0.011601  0.064155
+Fluorescence  0.107405      1.000000 -0.047872  0.026564  0.042240
+LxwRatio     -0.355404     -0.047872  1.000000  0.189161  0.237986
+Polish        0.011601      0.026564  0.189161  1.000000  0.103341
+Symmetry      0.064155      0.042240  0.237986  0.103341  1.000000
++++++++++++PREDICTIVITY+++++++++++
+Shape          -0.328830
+Carat           0.286708
+LxwRatio        0.237986
+Cut             0.146688
+Polish          0.103341
+Color          -0.102648
+Depth           0.064155
+Fluorescence    0.042240
+Clarity         0.028707
+Culet          -0.017178
+Name: Symmetry, dtype: float64
+(3760, 11)
+(1853, 11)
+(3760,)
+(1853,)
+RMSE 1.0
+78.6003392061
+Variance score: 0.78
+
+Process finished with exit code 0
